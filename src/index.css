@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #000;
+  font-family: ProtoMonoRegular;
+
+  /* font-family: "Sora", sans-serif; */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: osake;
+  src: url("./assets/fonts/osake.otf");
+}
+
+@font-face {
+  font-family: Source Code Pro;
+  src: url("./assets/fonts/mont-light.otf");
+}
+
+@font-face {
+  font-family: ProtoMonoRegular;
+  src: url("./assets/fonts/ProtoMonoRegular.ttf");
+}
+
+.font_osake {
+  font-family: osake;
+}
+
+.font_sora {
+  font-family: Source Code Pro;
+
+  /* font-family: "Sora", sans-serif; */
+}
+
+.up_down_animation {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+.up_down_animation {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
